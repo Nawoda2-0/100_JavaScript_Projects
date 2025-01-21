@@ -4,8 +4,34 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
+    <a class="button" onclick="toggleNewsLetter()">Susbscribe us</a>
     
+    <div class="hidden" id="newsLetter">
+        <h2>Join Our Exclusive News Letter</h2>
+        <p>Get latest and important news by following our news letter</p>
+        <div class="box">
+            <input type="email" placeholder="Enter email">
+        </div>
+        <div class="box">
+            <button type="submit">Sign up</button>
+        </div>
+        
+        <a href="" class="close" onclick="toggleNewsLetter()">
+            <i class="fa fa-times 2x" aria-hidden = "true"></i>
+        </a>
+    </div>
+
+    
+        
+        
+        <!-- The aria-hidden="true" ensures that screen readers focus on the functionality provided by the button (clicking to close the newsletter) rather than describing the "times" icon, which may not add any meaningful information for a screen reader user.
+        If the close button has a label or text description elsewhere, aria-hidden prevents duplication, ensuring a cleaner experience for users relying on assistive technologies. -->
+    
+
+    <script src="script.js"></script>
 </body>
 </html>
